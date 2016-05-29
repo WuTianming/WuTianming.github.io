@@ -269,7 +269,7 @@ code {
   padding: 10px 0;
   width: 200px;
   height: 100px;
-  background-image: url("images/header.png");
+  background-image: url("/images/header.png");
   background-position: 0px 10px;
   background-repeat: no-repeat;
   -webkit-background-size: 200px 100px;
