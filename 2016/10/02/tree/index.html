@@ -55,7 +55,7 @@
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://wutianming.cf/2016/10/02/tree/index.html">
 <meta property="og:site_name" content="WuTianming">
 <meta property="og:description" content="构建二叉树 / Tree问题描述树的表示方法很多，可以采用自然界的树形表示法，也可以采用括号表示法：先将根结点放入一对圆括号中，然后把它的子树按由左往右的顺序放入括号中，而对子树也采用同样的方法处理。同层子树与它的根结点用圆括号扩起来，同层子树之间用逗号格开，最后用闭括号括起来。如图所示的树可以表示成:(1(2(4,5),3))。由完全二叉树的定义我们可知，如果知道该完全二叉树的结点个数，则可以构">
-<meta property="og:updated_time" content="2016-10-02T09:05:50.420Z">
+<meta property="og:updated_time" content="2016-10-02T10:08:28.766Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tree">
 <meta name="twitter:description" content="构建二叉树 / Tree问题描述树的表示方法很多，可以采用自然界的树形表示法，也可以采用括号表示法：先将根结点放入一对圆括号中，然后把它的子树按由左往右的顺序放入括号中，而对子树也采用同样的方法处理。同层子树与它的根结点用圆括号扩起来，同层子树之间用逗号格开，最后用闭括号括起来。如图所示的树可以表示成:(1(2(4,5),3))。由完全二叉树的定义我们可知，如果知道该完全二叉树的结点个数，则可以构">
@@ -100,7 +100,7 @@
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
+    scheme: 'mist',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -309,6 +309,15 @@
 
           
           
+             <span id="/2016/10/02/tree/" class="leancloud_visitors" data-flag-title="tree">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
 
           
         </div>
@@ -323,6 +332,7 @@
 
       
         <h2 id="构建二叉树-Tree"><a href="#构建二叉树-Tree" class="headerlink" title="构建二叉树 / Tree"></a>构建二叉树 / Tree</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>树的表示方法很多，可以采用自然界的树形表示法，也可以采用括号表示法：先将根结点放入一对圆括号中，然后把它的子树按由左往右的顺序放入括号中，而对子树也采用同样的方法处理。同层子树与它的根结点用圆括号扩起来，同层子树之间用逗号格开，最后用闭括号括起来。如图所示的树可以表示成:(1(2(4,5),3))。由完全二叉树的定义我们可知，如果知道该完全二叉树的结点个数，则可以构建出一棵确定的完全二叉树，现在输入完全二叉树的结点数 N(N≤2<sup>14</sup>)，用括号表示法输出这棵树。（默认树的结点名称为树结点的编号。）</p>
+<a id="more"></a>
 <h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>N 完全二叉树的结点个数。</p>
 <h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>N 个结点的完全二叉树的括号表示。</p>
 <h3 id="样例数据"><a href="#样例数据" class="headerlink" title="样例数据"></a>样例数据</h3><table>
@@ -534,7 +544,7 @@
 <div class="theme-info">
   Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.mist
   </a>
 </div>
 
@@ -649,6 +659,113 @@
   
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("U6773pVOLXjPWf6khbsQJE8l-gzGzoHsz", "7p80yqMY78lwB1OsqEKjDnpa");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 

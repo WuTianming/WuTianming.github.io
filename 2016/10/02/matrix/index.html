@@ -55,7 +55,7 @@
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -111,11 +111,7 @@ A 经过顺时针旋转 270° 成为 B
 
 
 A, B 不相似
--1
-
-
-
-输入格式第一行为一个整数 n；接下来">
+-1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="matrix">
 <meta property="og:url" content="http://wutianming.cf/2016/10/02/matrix/index.html">
@@ -147,12 +143,8 @@ A 经过顺时针旋转 270° 成为 B
 
 
 A, B 不相似
--1
-
-
-
-输入格式第一行为一个整数 n；接下来">
-<meta property="og:updated_time" content="2016-10-02T09:04:48.000Z">
+-1">
+<meta property="og:updated_time" content="2016-10-02T10:08:08.942Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="matrix">
 <meta name="twitter:description" content="矩阵模拟 / Matrix问题描述给出 2 个大小相同的矩阵方阵 A 和 B，方阵中的元素为 0 或 1。若 A 和 B 相似，则它们满足下面条件:
@@ -182,18 +174,14 @@ A 经过顺时针旋转 270° 成为 B
 
 
 A, B 不相似
--1
-
-
-
-输入格式第一行为一个整数 n；接下来">
+-1">
 
 
 
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
+    scheme: 'mist',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -402,6 +390,15 @@ A, B 不相似
 
           
           
+             <span id="/2016/10/02/matrix/" class="leancloud_visitors" data-flag-title="matrix">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
 
           
         </div>
@@ -446,6 +443,7 @@ A, B 不相似
 </tr>
 </tbody>
 </table>
+<a id="more"></a>
 <h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>第一行为一个整数 n；<br>接下来的 n 行表示 A 矩阵的 01 方阵；<br>再接下来的 n 行表示 B 矩阵的 01 方阵。</p>
 <h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>一个整数（0，或 1，或 2，或 3，或 -1）即 A, B 相似的结果。</p>
 <h3 id="数据样例"><a href="#数据样例" class="headerlink" title="数据样例"></a>数据样例</h3><table>
@@ -690,7 +688,7 @@ A, B 不相似
 <div class="theme-info">
   Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.mist
   </a>
 </div>
 
@@ -805,6 +803,113 @@ A, B 不相似
   
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("U6773pVOLXjPWf6khbsQJE8l-gzGzoHsz", "7p80yqMY78lwB1OsqEKjDnpa");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
