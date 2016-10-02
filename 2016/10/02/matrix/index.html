@@ -86,50 +86,110 @@
 
 <meta name="description" content="矩阵模拟 / Matrix问题描述给出 2 个大小相同的矩阵方阵 A 和 B，方阵中的元素为 0 或 1。若 A 和 B 相似，则它们满足下面条件:
 
-A=B 相等，则输出 0
 
-A 经过顺时针旋转 90° 成为 B，则输出 1
 
-A 经过顺时针旋转 180° 成为 B，则输出 2
+情况
+输出
 
-A 经过顺时针旋转 270° 成为 B，则输出 3
 
-若 A, B 不相似, 则输出-1；
-情况 | 输出
- A=">
+
+
+A=B
+0
+
+
+A 经过顺时针旋转 90° 成为 B
+1
+
+
+A 经过顺时针旋转 180° 成为 B
+2
+
+
+A 经过顺时针旋转 270° 成为 B
+3
+
+
+A, B 不相似
+-1
+
+
+
+代码：
+12345678910111">
 <meta property="og:type" content="article">
 <meta property="og:title" content="matrix">
 <meta property="og:url" content="http://wutianming.cf/2016/10/02/matrix/index.html">
 <meta property="og:site_name" content="WuTianming">
 <meta property="og:description" content="矩阵模拟 / Matrix问题描述给出 2 个大小相同的矩阵方阵 A 和 B，方阵中的元素为 0 或 1。若 A 和 B 相似，则它们满足下面条件:
 
-A=B 相等，则输出 0
 
-A 经过顺时针旋转 90° 成为 B，则输出 1
 
-A 经过顺时针旋转 180° 成为 B，则输出 2
+情况
+输出
 
-A 经过顺时针旋转 270° 成为 B，则输出 3
 
-若 A, B 不相似, 则输出-1；
-情况 | 输出
- A=">
-<meta property="og:updated_time" content="2016-10-02T06:49:24.688Z">
+
+
+A=B
+0
+
+
+A 经过顺时针旋转 90° 成为 B
+1
+
+
+A 经过顺时针旋转 180° 成为 B
+2
+
+
+A 经过顺时针旋转 270° 成为 B
+3
+
+
+A, B 不相似
+-1
+
+
+
+代码：
+12345678910111">
+<meta property="og:updated_time" content="2016-10-02T06:54:24.289Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="matrix">
 <meta name="twitter:description" content="矩阵模拟 / Matrix问题描述给出 2 个大小相同的矩阵方阵 A 和 B，方阵中的元素为 0 或 1。若 A 和 B 相似，则它们满足下面条件:
 
-A=B 相等，则输出 0
 
-A 经过顺时针旋转 90° 成为 B，则输出 1
 
-A 经过顺时针旋转 180° 成为 B，则输出 2
+情况
+输出
 
-A 经过顺时针旋转 270° 成为 B，则输出 3
 
-若 A, B 不相似, 则输出-1；
-情况 | 输出
- A=">
+
+
+A=B
+0
+
+
+A 经过顺时针旋转 90° 成为 B
+1
+
+
+A 经过顺时针旋转 180° 成为 B
+2
+
+
+A 经过顺时针旋转 270° 成为 B
+3
+
+
+A, B 不相似
+-1
+
+
+
+代码：
+12345678910111">
 
 
 
@@ -352,25 +412,36 @@ A 经过顺时针旋转 270° 成为 B，则输出 3
 
       
         <h2 id="矩阵模拟-Matrix"><a href="#矩阵模拟-Matrix" class="headerlink" title="矩阵模拟 / Matrix"></a>矩阵模拟 / Matrix</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>给出 2 个大小相同的矩阵方阵 A 和 B，方阵中的元素为 0 或 1。若 A 和 B 相似，则它们满足下面条件:</p>
-<ol>
-<li><p>A=B 相等，则输出 0</p>
-</li>
-<li><p>A 经过顺时针旋转 90° 成为 B，则输出 1</p>
-</li>
-<li><p>A 经过顺时针旋转 180° 成为 B，则输出 2</p>
-</li>
-<li><p>A 经过顺时针旋转 270° 成为 B，则输出 3</p>
-</li>
-<li><p>若 A, B 不相似, 则输出-1；</p>
-<pre><code>情况 | 输出
- A=B | 0
-</code></pre><p>A 经过顺时针旋转 90° 成为 B | 1<br>A 经过顺时针旋转 180° 成为 B | 2</p>
-</li>
-<li><p>A 经过顺时针旋转 270° 成为 B，则输出 3</p>
-</li>
-<li><p>若 A, B 不相似, 则输出-1；</p>
-</li>
-</ol>
+<table>
+<thead>
+<tr>
+<th>情况</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A=B</td>
+<td>0</td>
+</tr>
+<tr>
+<td>A 经过顺时针旋转 90° 成为 B</td>
+<td>1</td>
+</tr>
+<tr>
+<td>A 经过顺时针旋转 180° 成为 B</td>
+<td>2</td>
+</tr>
+<tr>
+<td>A 经过顺时针旋转 270° 成为 B</td>
+<td>3</td>
+</tr>
+<tr>
+<td>A, B 不相似</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
 <p>代码：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">25</span>][<span class="number">25</span>],</span><br><span class="line">    a90[<span class="number">25</span>][<span class="number">25</span>],</span><br><span class="line">    a180[<span class="number">25</span>][<span class="number">25</span>],</span><br><span class="line">    a270[<span class="number">25</span>][<span class="number">25</span>],</span><br><span class="line">    b[<span class="number">25</span>][<span class="number">25</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    freopen(<span class="string">"matrix.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</span><br><span class="line">    freopen(<span class="string">"matrix.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">    <span class="keyword">int</span> tmp;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;tmp);</span><br><span class="line">            a[i][j] = tmp;</span><br><span class="line">            a90[j][n - i + <span class="number">1</span>] = tmp;</span><br><span class="line">            a180[n - i + <span class="number">1</span>][n - j + <span class="number">1</span>] = tmp;</span><br><span class="line">            a270[n - j + <span class="number">1</span>][i] = tmp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">bool</span> equal = <span class="literal">true</span>,</span><br><span class="line">         equal90 = <span class="literal">true</span>,</span><br><span class="line">         equal180 = <span class="literal">true</span>,</span><br><span class="line">         equal270 = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;tmp);</span><br><span class="line">            <span class="keyword">if</span> (a[i][j] != tmp) equal = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">if</span> (a90[i][j] != tmp) equal90 = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">if</span> (a180[i][j] != tmp) equal180 = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">if</span> (a270[i][j] != tmp) equal270 = <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (equal) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"0\n"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (equal90) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"1\n"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (equal180) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"2\n"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (equal270) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"3\n"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"-1\n"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
