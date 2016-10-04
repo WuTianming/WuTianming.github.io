@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[product]]></title>
+      <url>http://wutianming.cf/2016/10/03/product/</url>
+      <content type="html"><![CDATA[<h2 id="因子积-Product"><a href="#因子积-Product" class="headerlink" title="因子积 / Product"></a>因子积 / Product</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>YJC 想学习数论，但他连因子和怎么求都不知道，所以他决定先学习因子积。很快 YJC 就学会了怎么求因子积，于是他决定来考考你。当然，对于你来说求一个数的因子积实在是小菜一碟，所以他决定把问题变一变。</p>
+<p>设 N=p<sub>1</sub><sup>a1</sup> × p<sub>2</sub><sup>a2</sup> × … × p<sub>m</sub><sup>am</sup>， YJC 把 a1、a2、…、am 和 N%1998585857 的值告诉了你，现在他希望你告诉他 N<sup>2</sup> 的因子积%1998585857 的值是多少。</p>
+<a id="more"></a>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>第一行包含两个整数 m 和 x，表示 a 的个数和 N%1998585857 的值。<br>第二行包含 m 个整数，第 i 个整数表示 ai。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>第一行一个整数，表示 N<sup>2</sup> 的因子积%1998585857 的值。</p>
+<h3 id="数据样例"><a href="#数据样例" class="headerlink" title="数据样例"></a>数据样例</h3><table>
+<thead>
+<tr>
+<th>product.in</th>
+<th>product.out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 6</td>
+<td>10077696</td>
+</tr>
+<tr>
+<td>1 1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="数据说明"><a href="#数据说明" class="headerlink" title="数据说明"></a>数据说明</h3><p>对于 10%的数据，满足 m=0。<br>对于 30%的数据，满足 n=1 且存在一个 N=x。<br>对于 100%的数据，满足 1≤m≤1000000，0≤x<1998585857，0&lt;ai&lt;2<sup>31。</1998585857，0&lt;ai&lt;2<sup></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[addone]]></title>
+      <url>http://wutianming.cf/2016/10/03/addone/</url>
+      <content type="html"><![CDATA[<h2 id="加一-Addone"><a href="#加一-Addone" class="headerlink" title="加一 / Addone"></a>加一 / Addone</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>你的任务是很简单，给你一个非负整数 N，输出 N+1。唯一的复杂之处在于给出的整数是一个 2~36 进制（包括边界）中一个未知进制的整数（大家知道的，从 10 开始的数字分别用 A，B，C……来表示）。因此，你的程序必须按字典序递增输出所有可能的结果。</p>
+<a id="more"></a>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>一行，包含一个由数字 0 至 9 与大写字母 A 至 Z 组成的整数 N，数据保证没有前导零。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>输出所有的可能结果，每个结果占一行。</p>
+<h3 id="样例数据"><a href="#样例数据" class="headerlink" title="样例数据"></a>样例数据</h3><table>
+<thead>
+<tr>
+<th>addone1.in</th>
+<th>addone1.out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>32</td>
+<td>33</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>addone2.in</th>
+<th>addone2.out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9</td>
+<td>10</td>
+</tr>
+<tr>
+<td></td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="我的渣题解"><a href="#我的渣题解" class="headerlink" title="我的渣题解"></a>我的渣题解</h3><blockquote>
+<p>不会写，求助大神……</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[gou]]></title>
+      <url>http://wutianming.cf/2016/10/02/gou/</url>
+      <content type="html"><![CDATA[<h2 id="苟-Gou"><a href="#苟-Gou" class="headerlink" title="苟 / Gou"></a>苟 / Gou</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>苟先生有一个字符串，不过他的朋友富先生对他的字符串做了一些小手脚，不仅打乱了顺序而且还把一些字符变成了 “*” ，而且这个字符串混进了一大堆字符串中。苟先生想知道哪些可能是他的字符串。</p>
+<a id="more"></a>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>第一行一个整数 n 表示字符串长度。<br>第二行一个只含小写字母的长度为 n 的字符串表示苟先生的串。<br>第三行一个整数 m 表示混进的字符串数量。<br>接下来 m 行每行一个长度为 n 的字符串，包含小写字母和“*”。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>输出一行一个 m 位的二进制数，如果第 i 个字符串可能是苟先生的，第 i 位就为 1，否则为 0。</p>
+<h3 id="样例数据"><a href="#样例数据" class="headerlink" title="样例数据"></a>样例数据</h3><table>
+<thead>
+<tr>
+<th>gou.in</th>
+<th>gou.out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>101</td>
+</tr>
+<tr>
+<td>aba</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>aab</td>
+<td></td>
+</tr>
+<tr>
+<td>bb*</td>
+<td></td>
+</tr>
+<tr>
+<td>a**</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h3><p>对于 40%的数据不含“*”;<br>对于 100%的数据 n，m≤100。</p>
+<h3 id="我的渣题解"><a href="#我的渣题解" class="headerlink" title="我的渣题解"></a>我的渣题解</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, m;</span><br><span class="line"><span class="keyword">char</span> org[<span class="number">105</span>];</span><br><span class="line"><span class="keyword">char</span> str[<span class="number">105</span>];</span><br><span class="line"><span class="keyword">int</span> cnt;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(<span class="keyword">char</span> a, <span class="keyword">char</span> b)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (a == <span class="string">'*'</span>) return <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span> (b == <span class="string">'*'</span>) return <span class="literal">true</span>;</span><br><span class="line">    <span class="comment">// 星号排在后面</span></span><br><span class="line">    return a &lt; b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">strEqualWithAsterisks</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *a, <span class="keyword">const</span> <span class="keyword">char</span> *b)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i, j;</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>, j = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (a[i] != b[j]) &#123;</span><br><span class="line">            <span class="keyword">if</span> (cnt) &#123;</span><br><span class="line">                cnt--;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                return <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        j++;</span><br><span class="line">    &#125;</span><br><span class="line">    return <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    freopen(<span class="string">"gou.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</span><br><span class="line">    freopen(<span class="string">"gou.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%s"</span>, org);</span><br><span class="line">    sort(org, org + n, cmp);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;m);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123;</span><br><span class="line">        cnt = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%s"</span>, str);</span><br><span class="line">        sort(str, str + n, cmp);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; n; k++) <span class="keyword">if</span> (str[k] == <span class="string">'*'</span>) cnt++;</span><br><span class="line">        <span class="keyword">if</span> (strEqualWithAsterisks(org, str)) &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"1"</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"0"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[tree]]></title>
+      <url>http://wutianming.cf/2016/10/02/tree/</url>
+      <content type="html"><![CDATA[<h2 id="构建二叉树-Tree"><a href="#构建二叉树-Tree" class="headerlink" title="构建二叉树 / Tree"></a>构建二叉树 / Tree</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>树的表示方法很多，可以采用自然界的树形表示法，也可以采用括号表示法：先将根结点放入一对圆括号中，然后把它的子树按由左往右的顺序放入括号中，而对子树也采用同样的方法处理。同层子树与它的根结点用圆括号扩起来，同层子树之间用逗号格开，最后用闭括号括起来。如图所示的树可以表示成:(1(2(4,5),3))。由完全二叉树的定义我们可知，如果知道该完全二叉树的结点个数，则可以构建出一棵确定的完全二叉树，现在输入完全二叉树的结点数 N(N≤2<sup>14</sup>)，用括号表示法输出这棵树。（默认树的结点名称为树结点的编号。）</p>
+<a id="more"></a>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>N 完全二叉树的结点个数。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>N 个结点的完全二叉树的括号表示。</p>
+<h3 id="样例数据"><a href="#样例数据" class="headerlink" title="样例数据"></a>样例数据</h3><table>
+<thead>
+<tr>
+<th>tree.in</th>
+<th>tree.out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>(1(2(4,5),3))</td>
+</tr>
+</tbody>
+</table>
+<h3 id="我的渣题解"><a href="#我的渣题解" class="headerlink" title="我的渣题解"></a>我的渣题解</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> id)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (id &gt; n) return;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>, id);</span><br><span class="line">    <span class="keyword">if</span> (id * <span class="number">2</span> &lt;= n || id * <span class="number">2</span> + <span class="number">1</span> &lt;= n) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"("</span>);</span><br><span class="line">        <span class="keyword">if</span> (id * <span class="number">2</span> &lt;= n) dfs(id * <span class="number">2</span>);</span><br><span class="line">        <span class="keyword">if</span> (id * <span class="number">2</span> &lt;= n &amp;&amp; id * <span class="number">2</span> + <span class="number">1</span> &lt;= n) <span class="built_in">printf</span>(<span class="string">","</span>);</span><br><span class="line">        <span class="keyword">if</span> (id * <span class="number">2</span> + <span class="number">1</span> &lt;= n) dfs(id * <span class="number">2</span> + <span class="number">1</span>);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">")"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    freopen(<span class="string">"tree.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</span><br><span class="line">    freopen(<span class="string">"tree.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"("</span>);</span><br><span class="line">    dfs(<span class="number">1</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">")"</span>);</span><br><span class="line">    return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[matrix]]></title>
+      <url>http://wutianming.cf/2016/10/02/matrix/</url>
+      <content type="html"><![CDATA[<h2 id="矩阵模拟-Matrix"><a href="#矩阵模拟-Matrix" class="headerlink" title="矩阵模拟 / Matrix"></a>矩阵模拟 / Matrix</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>给出 2 个大小相同的矩阵方阵 A 和 B，方阵中的元素为 0 或 1。若 A 和 B 相似，则它们满足下面条件:</p>
+<table>
+<thead>
+<tr>
+<th>情况</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A=B</td>
+<td>0</td>
+</tr>
+<tr>
+<td>A 经过顺时针旋转 90° 成为 B</td>
+<td>1</td>
+</tr>
+<tr>
+<td>A 经过顺时针旋转 180° 成为 B</td>
+<td>2</td>
+</tr>
+<tr>
+<td>A 经过顺时针旋转 270° 成为 B</td>
+<td>3</td>
+</tr>
+<tr>
+<td>A, B 不相似</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+<a id="more"></a>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>第一行为一个整数 n；<br>接下来的 n 行表示 A 矩阵的 01 方阵；<br>再接下来的 n 行表示 B 矩阵的 01 方阵。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>一个整数（0，或 1，或 2，或 3，或 -1）即 A, B 相似的结果。</p>
+<h3 id="数据样例"><a href="#数据样例" class="headerlink" title="数据样例"></a>数据样例</h3><table>
+<thead>
+<tr>
+<th>matrix.in</th>
+<th>matrix.out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0 0 0 0</td>
+<td></td>
+</tr>
+<tr>
+<td>0 0 0 0</td>
+<td></td>
+</tr>
+<tr>
+<td>0 1 0 0</td>
+<td></td>
+</tr>
+<tr>
+<td>0 0 0 0</td>
+<td></td>
+</tr>
+<tr>
+<td>0 0 0 0</td>
+<td></td>
+</tr>
+<tr>
+<td>0 1 0 0</td>
+<td></td>
+</tr>
+<tr>
+<td>0 0 0 0</td>
+<td></td>
+</tr>
+<tr>
+<td>0 0 0 0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h3><p>100%的数据：1≤n≤20。</p>
+<h3 id="我的渣题解"><a href="#我的渣题解" class="headerlink" title="我的渣题解"></a>我的渣题解</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">25</span>][<span class="number">25</span>],</span><br><span class="line">    a90[<span class="number">25</span>][<span class="number">25</span>],</span><br><span class="line">    a180[<span class="number">25</span>][<span class="number">25</span>],</span><br><span class="line">    a270[<span class="number">25</span>][<span class="number">25</span>],</span><br><span class="line">    b[<span class="number">25</span>][<span class="number">25</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    freopen(<span class="string">"matrix.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</span><br><span class="line">    freopen(<span class="string">"matrix.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">    <span class="keyword">int</span> tmp;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;tmp);</span><br><span class="line">            a[i][j] = tmp;</span><br><span class="line">            a90[j][n - i + <span class="number">1</span>] = tmp;</span><br><span class="line">            a180[n - i + <span class="number">1</span>][n - j + <span class="number">1</span>] = tmp;</span><br><span class="line">            a270[n - j + <span class="number">1</span>][i] = tmp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">bool</span> equal = <span class="literal">true</span>,</span><br><span class="line">         equal90 = <span class="literal">true</span>,</span><br><span class="line">         equal180 = <span class="literal">true</span>,</span><br><span class="line">         equal270 = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; j++) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;tmp);</span><br><span class="line">            <span class="keyword">if</span> (a[i][j] != tmp) equal = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">if</span> (a90[i][j] != tmp) equal90 = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">if</span> (a180[i][j] != tmp) equal180 = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">if</span> (a270[i][j] != tmp) equal270 = <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (equal) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"0\n"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (equal90) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"1\n"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (equal180) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"2\n"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (equal270) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"3\n"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"-1\n"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[example]]></title>
+      <url>http://wutianming.cf/2016/10/01/example/</url>
+      <content type="html"><![CDATA[<h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><h3 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h3><h4 id="标题4"><a href="#标题4" class="headerlink" title="标题4"></a>标题4</h4><h5 id="标题5"><a href="#标题5" class="headerlink" title="标题5"></a>标题5</h5><h6 id="标题6"><a href="#标题6" class="headerlink" title="标题6"></a>标题6</h6><a id="more"></a>
+<blockquote>
+<p>引用</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 代码段</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>正文</p>
+<p><del>删除</del></p>
+<p><strong>粗体</strong></p>
+<p><em>斜体</em></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Linux 全教程]]></title>
+      <url>http://wutianming.cf/2016/05/27/IntroToLinux/</url>
+      <content type="html"><![CDATA[<h1 id="Linux-全教程-·-目录"><a href="#Linux-全教程-·-目录" class="headerlink" title=" Linux 全教程 · 目录"></a><a name="mulu"> <a href="#mulu">Linux 全教程 · 目录</a></a></h1><ul>
+<li><a href="#mulu">I 目录</a></li>
+<li><a href="#guanyuwo">II 关于我</a></li>
+<li><a href="#qianyan">0 前言</a></li>
+<li><a href="#changshi">1 小白入门常识</a></li>
+<li><a href="#jianjie">2 Linux 简介</a><ul>
+<li><a href="#whatis">2.1 是什么</a></li>
+<li><a href="#whatcando">2.2 有啥用</a></li>
+</ul>
+</li>
+<li><a href="#haveatry">3 尝试 Linux</a><ul>
+<li><a href="#choosedistro">3.1 选择发行版</a><ul>
+<li><a href="#whatisdistro">3.1.1 发行版的概念</a></li>
+<li><a href="#finddistroforu">3.1.2 选择你适合的发行版</a></li>
+</ul>
+</li>
+<li><a href="#dldistro">3.2 下载发行版</a></li>
+<li><a href="#installation">3.3 安装系统</a><ul>
+<li><a href="#ubuntuinst">3.3.1 ubuntu</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a id="more"></a>
+<hr>
+<h2 id="关于我"><a href="#关于我" class="headerlink" title=" 关于我"></a><a name="guanyuwo"> <a href="#guanyuwo">关于我</a></a></h2><p>本人是学生，一开始接触了 C 语言，由于搞 OI ，尝试了下 Linux ，结果一发不可收拾。</p>
+<p>也许我自己对 Linux 的了解也不够深，但是作为一个一年之内从小白成长到能够熟练使用 Linux 的 ArchUser ，我认为我的经验还是能够给大家作参考的。<strong>大神喷轻点儿</strong></p>
+<p>本文中的概念都不是很专业，也许我的用词也不够准确（因为都是我根据自己的理解写出来的），但是只要小白能看懂，本文的目标就达到了。</p>
+<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title=" 前言"></a><a name="qianyan"> <a href="#qianyan">前言</a></a></h2><blockquote>
+<p>最近发现很多人想要了解 Linux （大多是搞OI的），但对 Linux 的了解却非常少，甚至有人让我“把安装包发给他”。我实在看不下去了…</p>
+</blockquote>
+<p>为了改变这个现状，我于是开始写这个小白教程，目的是让小白们对 Linux 有更深的了解，并且能够做到安装、使用 Linux 。</p>
+<p>文章是为小白准备的，会补充一<del>些</del>堆基本常识，电脑大神自动略过。也许这篇文章会变成一篇很长的长篇大论，就看我有没有本事写那么多了（233）。</p>
+<p>本教程由吴天铭原创编写，转载请注明出处。</p>
+<hr>
+<h2 id="1-小白入门常识"><a href="#1-小白入门常识" class="headerlink" title=" 1 小白入门常识"></a><a name="changshi"> <a href="#changshi">1 小白入门常识</a></a></h2><p>// TODO: 电脑分区，分区表，启动（MBR -&gt; SYS），系统的概念</p>
+<hr>
+<h2 id="2-Linux-简介"><a href="#2-Linux-简介" class="headerlink" title=" 2 Linux 简介"></a><a name="jianjie"> <a href="#jianjie">2 Linux 简介</a></a></h2><p><a href="http://baike.baidu.com/link?url=vYgpIGAHa1qSL7iydhL_yLNibJgbSuXP-TlWwzM4yoC4xgYXDyMzsHtHuACrnqMplo6bz06rH4a8LzEdcjRqfq" target="_blank" rel="external">百度百科 · Linux</a><br><a href="http://www.bilibili.com/video/av4876133/" target="_blank" rel="external">说得非常清楚的简介</a></p>
+<h3 id="2-1-是什么"><a href="#2-1-是什么" class="headerlink" title=" 2.1 是什么"></a><a name="whatis"> <a href="#whatis">2.1 是什么</a></a></h3><p>Linux 是一个操作系统<strong>内核</strong>，是一个操作系统最为重要的组件。它并<strong>不是一个完整的系统</strong>。</p>
+<p>Linux 操作系统（指任何一个使用 Linux 内核的发行版）是可以免费使用和自由传播的类 Unix 操作系统。</p>
+<p>请注意，与 Windows 不同， Linux 仅仅是一个<strong>内核</strong>，而不是一种<em>能够直接使用的操作系统</em>。这个<strong>内核</strong>是不包含用户界面的，不能直接由用户操作。</p>
+<h3 id="2-2-有啥用"><a href="#2-2-有啥用" class="headerlink" title=" 2.2 有啥用"></a><a name="whatcando"> <a href="#whatcando">2.2 有啥用</a></a></h3><p>Linux 作为一个内核，它对用户是不露面的。它只顾在后台静静地处理自己的任务，比如把程序加载进内存，把进程平等地分配给 CPU 处理，等等。</p>
+<p>Linux 内核的运作，我们普通用户没必要了解。我们只需要知道，有了 Linux 内核， Linux 软件就能够在电脑上运行，也就有了各种各样的、易于使用的发行版了。</p>
+<hr>
+<h2 id="3-尝试-Linux"><a href="#3-尝试-Linux" class="headerlink" title=" 3 尝试 Linux"></a><a name="haveatry"> <a href="#haveatry">3 尝试 Linux</a></a></h2><p>首先，我要试一下～～</p>
+<h3 id="3-1-选择发行版"><a href="#3-1-选择发行版" class="headerlink" title=" 3.1 选择发行版"></a><a name="choosedistro"> <a href="#choosedistro">3.1 选择发行版</a></a></h3><p>要想尝试 Linux ，首先要选择一个适合自己的发行版，这一点犹为重要。</p>
+<h4 id="3-1-1-发行版的概念"><a href="#3-1-1-发行版的概念" class="headerlink" title=" 3.1.1 发行版的概念"></a><a name="whatisdistro"> <a href="#whatisdistro">3.1.1 发行版的概念</a></a></h4><p>我们现在在网上能够看到的<em> Linux 系统</em>，通常是指 Linux <strong>发行版</strong>。那么“Linux 发行版”又是什么呢？</p>
+<p>Linux 是一个系统内核，只负责处理系统内部事务，无法直接由用户掌管。一个完整的、能与用户进行交互的 Linux 操作系统，其组件除了 Linux 内核以外，还有大量的软件包。这些软件包有些负责处理硬件（如管理网卡），有些负责处理用户界面（如提供命令行交互系统、图形界面交互系统等）；还有一些不是可以直接运行的软件，而是作为其它软件的依赖库。由于 Linux 内核、标准依赖库更新频繁，不同的硬件的可执行文件格式也不一样，这些软件包无法做成统一的安装包（或安装程序）的形式，只能从源代码编译安装（以保证软件在自己的电脑上能够正常运行），极其麻烦，耗时耗力，常常把用户搞得心力交猝。最可怕的是， Linux <strong>内核</strong>可不包含编译器，这就意味着，你必须要先得到编译器才能够安装其它软件；可是，编译器也需要编译安装…… 太可怕了！</p>
+<p>于是，有些懒人们就创建了<strong> Linux 发行版</strong>。他们把 Linux 内核与系统工具、用户界面和一些预装软件打包在一起，做成了易于使用的操作系统，还给它起了<del>好听的</del>名字。比如，现在很火的 ubuntu ，Geek 们十分喜爱的 ArchLinux 和 Gentoo ，还有经久不衰的红帽子（Redhat）…… 多了去了！</p>
+<p>为了解决软件全都要编译安装的问题，发行版通常会配备一个专用的<strong>软件源</strong>，也就是一个放有大量软件包的专用服务器。这些软件包是已经由源代码编译好的，并且确认了可以在目标发行版中完美运行。可以这样说：有了软件源，就相当于有了一个全免费、全自动、真·良心的应用商场，再也不需要搜遍百度找软件了。</p>
+<h4 id="3-1-2-选择你适合的发行版"><a href="#3-1-2-选择你适合的发行版" class="headerlink" title=" 3.1.2 选择你适合的发行版"></a><a name="finddistroforu"> <a href="#finddistroforu">3.1.2 选择你适合的发行版</a></a></h4><p>// TODO: 介绍几个常用发行版</p>
+<h3 id="3-2-下载发行版"><a href="#3-2-下载发行版" class="headerlink" title=" 3.2 下载发行版"></a><a name="dldistro"> <a href="#dldistro">3.2 下载发行版</a></a></h3><p>// 先放个链接<br>ubuntu -&gt; <a href="http://www.ubuntu.com" target="_blank" rel="external">http://www.ubuntu.com</a><br>ArchLinux -&gt; <a href="https://www.archlinux.org" target="_blank" rel="external">https://www.archlinux.org</a></p>
+<h3 id="3-3-安装系统"><a href="#3-3-安装系统" class="headerlink" title=" 3.3 安装系统"></a><a name="installation"> <a href="#installation">3.3 安装系统</a></a></h3><p>下载到系统镜像之后，我们进入安装进程。</p>
+<h4 id="3-3-1-ubuntu"><a href="#3-3-1-ubuntu" class="headerlink" title=" 3.3.1 ubuntu"></a><a name="ubuntuinst"> <a href="#ubuntuinst">3.3.1 ubuntu</a></a></h4><p>由于 ubuntu 是现今比较流行、号称“对用户炒鸡友好”的一个发行版，我先来介绍它的安装过程。</p>
+<p><strong>警告：安装不成功，请勿轻易格盘！请务必读完。</strong><br><strong>我的操作系统是 ArchLinux ，为了提供 Windows 系统的截图，我使用了虚拟机，所以很多地方会不一样，请以实际情况为准！</strong><br><strong>此处你应该使用 Windows 进行操作！</strong><br><strong>这里是实体机安装，非虚拟机！</strong><br><strong>不要照葫芦画瓢地跟着操作，我这里也可能会有误！务必理解操作的目的，忌盲目跟从。</strong></p>
+<blockquote>
+<p>Step 1 -&gt; 安装前</p>
+</blockquote>
+<p>安装之前，我们要作些配置，使得我们的电脑能够装得下 ubuntu 系统。</p>
+<p>首先，我们要确认磁盘剩余空间足够（这个都会吧）。接着，我们要对计算机磁盘进行分区，分出一块空白空间供 ubuntu 使用。</p>
+<p><img src="/images/IntroToLinux1.png" alt="分区前"></p>
+<p>按下 Win+R 键，会弹出一个“运行”窗口。输入 <code>diskmgmt.msc</code> ，按下回车键，稍等片刻将会弹出一个 Windows 自带的磁盘管理器。<br><strong>Windows 自带的 DiskManager 仅在 Windows7 及以上版本中拥有分区功能。若你使用 XP 或者更老，你可以考虑使用 DiskGenius，在这里不说了。</strong></p>
+<p><img src="/images/IntroToLinux2.png" alt="Windows的磁盘管理器"></p>
+<p>你可以看到，我的虚拟机只有一个分区，就是 C: 盘。你的电脑一般会有四个分区，第一个（C:）是主分区；剩余部分是一个大的扩展分区，这个扩展分区中又包含了三个小的逻辑分区（D: E: F:）。</p>
+<p><img src="/images/IntroToLinux3.png" alt="很多 Windows 电脑默认的磁盘分区简图"></p>
+<p>主分区也被称为“引导分区”，因为它拥有分区引导记录，直接控制着系统的启动，所以你不能随意动它。那么，我们就找一个能够分的分区切割一下。比如说，你的 F: 盘剩余空间很大（ubuntu 要求至少 15GB 左右来保证正常使用），你就可以切分 F: 盘的空间。</p>
+<p>啊… ╮(￣▽￣)╭ 我的虚拟机也是 XP，没有切割分区功能，这里也不截图了。正确的姿势应该是：通过菜单中的调整分区大小操作，将一个<strong>逻辑分区</strong>的大小<strong>改小</strong>，就能留出一块空余空间。<strong>空出来的空间不要管它，就让它先空着。</strong></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[大家来聊天]]></title>
+      <url>http://wutianming.cf/2016/05/21/%E5%A4%A7%E5%AE%B6%E6%9D%A5%E8%81%8A%E5%A4%A9/</url>
+      <content type="html"><![CDATA[<h3 id="这篇文章只是无聊。"><a href="#这篇文章只是无聊。" class="headerlink" title="这篇文章只是无聊。"></a>这篇文章只是无聊。</h3><p>大家可以使用本文章下部的评论功能进行聊天。仅此而已。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[我的GitHub博客正式上线了！]]></title>
+      <url>http://wutianming.cf/2016/05/20/Ported-to-wutianming-cf/</url>
+      <content type="html"><![CDATA[<p>RT。这个博客是我使用 Hexo 搭建的，<del>使用 Hueman 主题。</del>（16.10.03）已改为 NexT.Mist。</p>
+<p>效果很好，不是吗？</p>
+<p>本博客原位置位于 <a href="http://wutianming.github.io" target="_blank" rel="external">github.io</a>，现在绑定到了一个很好记忆的域名上： <a href="http://wutianming.cf">wutianming.cf</a>。</p>
+<p><del>同时，我的<a href="http://wtmblog.51kdn.cn" target="_blank" rel="external">另一个博客</a>同样正在运行中。</del>现已经准备关停此站。</p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
