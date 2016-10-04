@@ -5,20 +5,20 @@
     
     <entry>
       <title><![CDATA[commend]]></title>
-      <url>http://wutianming.cf/2016/10/04/commend/</url>
+      <url>http://wutianming.coding.me/2016/10/04/commend/</url>
       <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, m;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">55</span>][<span class="number">55</span>];</span><br><span class="line"><span class="keyword">int</span> b[<span class="number">55</span>];</span><br><span class="line"><span class="keyword">int</span> c[<span class="number">55</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    freopen(<span class="string">"commend.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</span><br><span class="line">    freopen(<span class="string">"commend.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> id = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a[i][j]);</span><br><span class="line">            <span class="keyword">if</span> (a[i][j] &gt; cnt) &#123;</span><br><span class="line">                cnt = a[i][j];</span><br><span class="line">                id = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        b[i] = id;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        c[b[i]]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> id = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (c[i] &gt; cnt) &#123;</span><br><span class="line">            cnt = c[i];</span><br><span class="line">            id = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, id);</span><br><span class="line">    return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[bomb]]></title>
-      <url>http://wutianming.cf/2016/10/04/bomb/</url>
+      <url>http://wutianming.coding.me/2016/10/04/bomb/</url>
       <content type="html"></content>
     </entry>
     
     <entry>
       <title><![CDATA[product]]></title>
-      <url>http://wutianming.cf/2016/10/03/product/</url>
+      <url>http://wutianming.coding.me/2016/10/03/product/</url>
       <content type="html"><![CDATA[<h2 id="因子积-Product"><a href="#因子积-Product" class="headerlink" title="因子积 / Product"></a>因子积 / Product</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>YJC 想学习数论，但他连因子和怎么求都不知道，所以他决定先学习因子积。很快 YJC 就学会了怎么求因子积，于是他决定来考考你。当然，对于你来说求一个数的因子积实在是小菜一碟，所以他决定把问题变一变。</p>
 <p>设 N=p<sub>1</sub><sup>a1</sup> × p<sub>2</sub><sup>a2</sup> × … × p<sub>m</sub><sup>am</sup>， YJC 把 a1、a2、…、am 和 N%1998585857 的值告诉了你，现在他希望你告诉他 N<sup>2</sup> 的因子积%1998585857 的值是多少。</p>
 <a id="more"></a>
@@ -48,7 +48,7 @@
     
     <entry>
       <title><![CDATA[addone]]></title>
-      <url>http://wutianming.cf/2016/10/03/addone/</url>
+      <url>http://wutianming.coding.me/2016/10/03/addone/</url>
       <content type="html"><![CDATA[<h2 id="加一-Addone"><a href="#加一-Addone" class="headerlink" title="加一 / Addone"></a>加一 / Addone</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>你的任务是很简单，给你一个非负整数 N，输出 N+1。唯一的复杂之处在于给出的整数是一个 2~36 进制（包括边界）中一个未知进制的整数（大家知道的，从 10 开始的数字分别用 A，B，C……来表示）。因此，你的程序必须按字典序递增输出所有可能的结果。</p>
 <a id="more"></a>
 <h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>一行，包含一个由数字 0 至 9 与大写字母 A 至 Z 组成的整数 N，数据保证没有前导零。</p>
@@ -93,7 +93,7 @@
     
     <entry>
       <title><![CDATA[gou]]></title>
-      <url>http://wutianming.cf/2016/10/02/gou/</url>
+      <url>http://wutianming.coding.me/2016/10/02/gou/</url>
       <content type="html"><![CDATA[<h2 id="苟-Gou"><a href="#苟-Gou" class="headerlink" title="苟 / Gou"></a>苟 / Gou</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>苟先生有一个字符串，不过他的朋友富先生对他的字符串做了一些小手脚，不仅打乱了顺序而且还把一些字符变成了 “*” ，而且这个字符串混进了一大堆字符串中。苟先生想知道哪些可能是他的字符串。</p>
 <a id="more"></a>
 <h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>第一行一个整数 n 表示字符串长度。<br>第二行一个只含小写字母的长度为 n 的字符串表示苟先生的串。<br>第三行一个整数 m 表示混进的字符串数量。<br>接下来 m 行每行一个长度为 n 的字符串，包含小写字母和“*”。</p>
@@ -139,7 +139,7 @@
     
     <entry>
       <title><![CDATA[tree]]></title>
-      <url>http://wutianming.cf/2016/10/02/tree/</url>
+      <url>http://wutianming.coding.me/2016/10/02/tree/</url>
       <content type="html"><![CDATA[<h2 id="构建二叉树-Tree"><a href="#构建二叉树-Tree" class="headerlink" title="构建二叉树 / Tree"></a>构建二叉树 / Tree</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>树的表示方法很多，可以采用自然界的树形表示法，也可以采用括号表示法：先将根结点放入一对圆括号中，然后把它的子树按由左往右的顺序放入括号中，而对子树也采用同样的方法处理。同层子树与它的根结点用圆括号扩起来，同层子树之间用逗号格开，最后用闭括号括起来。如图所示的树可以表示成:(1(2(4,5),3))。由完全二叉树的定义我们可知，如果知道该完全二叉树的结点个数，则可以构建出一棵确定的完全二叉树，现在输入完全二叉树的结点数 N(N≤2<sup>14</sup>)，用括号表示法输出这棵树。（默认树的结点名称为树结点的编号。）</p>
 <a id="more"></a>
 <h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>N 完全二叉树的结点个数。</p>
@@ -164,7 +164,7 @@
     
     <entry>
       <title><![CDATA[matrix]]></title>
-      <url>http://wutianming.cf/2016/10/02/matrix/</url>
+      <url>http://wutianming.coding.me/2016/10/02/matrix/</url>
       <content type="html"><![CDATA[<h2 id="矩阵模拟-Matrix"><a href="#矩阵模拟-Matrix" class="headerlink" title="矩阵模拟 / Matrix"></a>矩阵模拟 / Matrix</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>给出 2 个大小相同的矩阵方阵 A 和 B，方阵中的元素为 0 或 1。若 A 和 B 相似，则它们满足下面条件:</p>
 <table>
 <thead>
@@ -252,7 +252,7 @@
     
     <entry>
       <title><![CDATA[example]]></title>
-      <url>http://wutianming.cf/2016/10/01/example/</url>
+      <url>http://wutianming.coding.me/2016/10/01/example/</url>
       <content type="html"><![CDATA[<h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><h3 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h3><h4 id="标题4"><a href="#标题4" class="headerlink" title="标题4"></a>标题4</h4><h5 id="标题5"><a href="#标题5" class="headerlink" title="标题5"></a>标题5</h5><h6 id="标题6"><a href="#标题6" class="headerlink" title="标题6"></a>标题6</h6><a id="more"></a>
 <blockquote>
 <p>引用</p>
@@ -267,7 +267,7 @@
     
     <entry>
       <title><![CDATA[Linux 全教程]]></title>
-      <url>http://wutianming.cf/2016/05/27/IntroToLinux/</url>
+      <url>http://wutianming.coding.me/2016/05/27/IntroToLinux/</url>
       <content type="html"><![CDATA[<h1 id="Linux-全教程-·-目录"><a href="#Linux-全教程-·-目录" class="headerlink" title=" Linux 全教程 · 目录"></a><a name="mulu"> <a href="#mulu">Linux 全教程 · 目录</a></a></h1><ul>
 <li><a href="#mulu">I 目录</a></li>
 <li><a href="#guanyuwo">II 关于我</a></li>
@@ -342,14 +342,14 @@
     
     <entry>
       <title><![CDATA[大家来聊天]]></title>
-      <url>http://wutianming.cf/2016/05/21/%E5%A4%A7%E5%AE%B6%E6%9D%A5%E8%81%8A%E5%A4%A9/</url>
+      <url>http://wutianming.coding.me/2016/05/21/%E5%A4%A7%E5%AE%B6%E6%9D%A5%E8%81%8A%E5%A4%A9/</url>
       <content type="html"><![CDATA[<h3 id="这篇文章只是无聊。"><a href="#这篇文章只是无聊。" class="headerlink" title="这篇文章只是无聊。"></a>这篇文章只是无聊。</h3><p>大家可以使用本文章下部的评论功能进行聊天。仅此而已。</p>
 ]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[我的GitHub博客正式上线了！]]></title>
-      <url>http://wutianming.cf/2016/05/20/Ported-to-wutianming-cf/</url>
+      <url>http://wutianming.coding.me/2016/05/20/Ported-to-wutianming-cf/</url>
       <content type="html"><![CDATA[<p>RT。这个博客是我使用 Hexo 搭建的，<del>使用 Hueman 主题。</del>（16.10.03）已改为 NexT.Mist。</p>
 <p>效果很好，不是吗？</p>
 <p>本博客原位置位于 <a href="http://wutianming.github.io" target="_blank" rel="external">github.io</a>，现在绑定到了一个很好记忆的域名上： <a href="http://wutianming.cf">wutianming.cf</a>。</p>
