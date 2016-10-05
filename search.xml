@@ -4,6 +4,116 @@
   
     
     <entry>
+      <title><![CDATA[bomb]]></title>
+      <url>http://wutianming.coding.me/2016/10/05/bomb/</url>
+      <content type="html"><![CDATA[<h2 id="轰炸-Bomb"><a href="#轰炸-Bomb" class="headerlink" title="轰炸 / Bomb"></a>轰炸 / Bomb</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>C 国和 W 国爆发了战争！YJC 决定对 W 国的 n 个城市进行轰炸。每个城市都有一个重要度 a<sub>i</sub> 。设 x<sub>i</sub>=重要度大于 a<sub>i</sub> 的城市数+1，那么第 i 个城市就是第 x<sub>i</sub> 个被轰炸的城市。显然这样能保证重要度大的城市先被轰炸，重要度相同的城市同时被轰炸。现在 YJC 想知道，对于每一个 i，x<sub>i</sub> 等于多少?</p>
+<a id="more"></a>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>第一行包含一个整数 n，表示城市个数。第二行包含 n 个整数，第 i 个整数 a<sub>i</sub> 表示第 i 个城市的重要度。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>一行，包含 n 个整数，第 i 个整数 x i 表示第 i 个城市是第几个被轰炸的城市。</p>
+<h3 id="样例数据"><a href="#样例数据" class="headerlink" title="样例数据"></a>样例数据</h3><table>
+<thead>
+<tr>
+<th>bomb.in</th>
+<th>bomb.out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>1 3 1 3 3</td>
+</tr>
+<tr>
+<td>3 1 3 1 1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[feng]]></title>
+      <url>http://wutianming.coding.me/2016/10/05/feng/</url>
+      <content type="html"><![CDATA[<h2 id="风-Feng"><a href="#风-Feng" class="headerlink" title="风 / Feng"></a>风 / Feng</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>起风了，风中飘着很多数字对，小 S 认为，只有满足某种特定关系的数字对才能飘得更远，现在她想知道满足 a+b&lt;=n，且 ab/(a+b)是整数的正整数对(a，b)有多少。</p>
+<a id="more"></a>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>一行一个正整数 n。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>一行一个整数表示答案。</p>
+<h3 id="样例数据"><a href="#样例数据" class="headerlink" title="样例数据"></a>样例数据</h3><table>
+<thead>
+<tr>
+<th>feng.in</th>
+<th>feng.out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+<h3 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h3><p>40%的数据：n≤10<sup>3</sup>;<br>60%的数据：n≤10<sup>5</sup>;<br>80%的数据：n≤10<sup>7</sup>;<br>100%的数据：n≤10<sup>12</sup>。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[shui]]></title>
+      <url>http://wutianming.coding.me/2016/10/05/shui/</url>
+      <content type="html"><![CDATA[<h2 id="水-Shui"><a href="#水-Shui" class="headerlink" title="水 / Shui"></a>水 / Shui</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>小 S 有一个水瓶，里面装有一定量的水，由于某些原因，她只记得水瓶里的水在[L，R]区间内，小 S 还有两个水杯，她每次可以往一个杯子里倒任意数量的水（可以不是整数），如果不足则全部倒完，现在她想知道至少需要多少次操作才能保证对于[L，R]中的每个数，操作完成后水瓶里剩的水不超过 1，且两个杯子里水量的差也不超过 1 。</p>
+<a id="more"></a>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>第一行一个正整数 T 表示测试数据组数。<br>接下来 T 行每行两个非负整数 L 和 R。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>对每组数据输出一行一个整数表示答案。</p>
+<h3 id="样例数据"><a href="#样例数据" class="headerlink" title="样例数据"></a>样例数据</h3><table>
+<thead>
+<tr>
+<th>shui.in</th>
+<th>shui.out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3 5</td>
+<td>3</td>
+</tr>
+<tr>
+<td>8 13</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h3><p>20%的数据：L≤R≤10;<br>另有 20%的数据：L=R;<br>另有 20%的数据：L=0;<br>100%的数据：T≤10000，L≤R≤10<sup>9</sup>。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[di]]></title>
+      <url>http://wutianming.coding.me/2016/10/05/di/</url>
+      <content type="html"><![CDATA[<h2 id="地-Di"><a href="#地-Di" class="headerlink" title="地 / Di"></a>地 / Di</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>地上有一块 n*n 的棋盘，小 S 决定在上面放棋子，使任意两个棋子都不在同一行或同一列或同一斜线，由于小 S 不想思考，她决定逐行且在每行从左往右考虑格子，如果能放棋子就放上棋子，现在她想知道这样会放上多少个棋子。</p>
+<a id="more"></a>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>一行一个正整数 n。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>一行一个整数表示答案。</p>
+<h3 id="样例数据"><a href="#样例数据" class="headerlink" title="样例数据"></a>样例数据</h3><table>
+<thead>
+<tr>
+<th>di.in</th>
+<th>di.out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[shu]]></title>
       <url>http://wutianming.coding.me/2016/10/05/shu/</url>
       <content type="html"><![CDATA[<h2 id="数-Shu"><a href="#数-Shu" class="headerlink" title="数 / Shu"></a>数 / Shu</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>将 N 个整数排成一行，每个整数 a[i]的值在(-10000 ≤ a[i] ≤ 10000)。然后从这一行数中进行取数，其规则是：可从这一行中的任何一个位置开始取数，到任何位置结束，但不能不取。找出一种取法，使得取得的和为最大，再找出一种取法，使得取得的和为最小。例如：N=4， 4 个数依次为：13，-6，7，-8 取得和为最大的是：13+(-6)+7=14 取得和为最小的是：-8。</p>
@@ -36,12 +146,6 @@
       <url>http://wutianming.coding.me/2016/10/04/commend/</url>
       <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, m;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">55</span>][<span class="number">55</span>];</span><br><span class="line"><span class="keyword">int</span> b[<span class="number">55</span>];</span><br><span class="line"><span class="keyword">int</span> c[<span class="number">55</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    freopen(<span class="string">"commend.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</span><br><span class="line">    freopen(<span class="string">"commend.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> id = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a[i][j]);</span><br><span class="line">            <span class="keyword">if</span> (a[i][j] &gt; cnt) &#123;</span><br><span class="line">                cnt = a[i][j];</span><br><span class="line">                id = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        b[i] = id;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        c[b[i]]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> id = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (c[i] &gt; cnt) &#123;</span><br><span class="line">            cnt = c[i];</span><br><span class="line">            id = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, id);</span><br><span class="line">    return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[bomb]]></title>
-      <url>http://wutianming.coding.me/2016/10/04/bomb/</url>
-      <content type="html"></content>
     </entry>
     
     <entry>
