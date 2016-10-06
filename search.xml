@@ -4,6 +4,43 @@
   
     
     <entry>
+      <title><![CDATA[e]]></title>
+      <url>http://wutianming.coding.me/2016/10/06/e/</url>
+      <content type="html"><![CDATA[<h2 id="恶-E"><a href="#恶-E" class="headerlink" title="恶 / E"></a>恶 / E</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>有 n 个恶魔就要诞生了，恶魔头子要给每个即将诞生的恶魔取一个名字，恶魔秘书给恶魔头子提供了 n 个字符串供参考，由于每个字符串单词都很长，恶魔头子想到先把单词化简一下，方法是把每个单词尽量取短些的前缀，但所取的前缀不能是其它单词的前缀。这个任务现在就交给你来完成。</p>
+<a id="more"></a>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>第一行一个整数 N，表示单词个数。下面有 N 行，每行一个单词，每个单词的长度不超过 50，且都是由小写字母组成，保证所给单词没有一个单词是另一个单词的前缀。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>共 N 行，每行一个单词，是对应上面的 N 个单词化简后的单词。</p>
+<h3 id="样例数据"><a href="#样例数据" class="headerlink" title="样例数据"></a>样例数据</h3><table>
+<thead>
+<tr>
+<th>e.in</th>
+<th>e.out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>a</td>
+</tr>
+<tr>
+<td>abc</td>
+<td>e</td>
+</tr>
+<tr>
+<td>efg</td>
+<td>i</td>
+</tr>
+<tr>
+<td>ijh</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h3><p>100%的数据：1 ≤ N ≤ 50。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[bomb]]></title>
       <url>http://wutianming.coding.me/2016/10/05/bomb/</url>
       <content type="html"><![CDATA[<h2 id="轰炸-Bomb"><a href="#轰炸-Bomb" class="headerlink" title="轰炸 / Bomb"></a>轰炸 / Bomb</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>C 国和 W 国爆发了战争！YJC 决定对 W 国的 n 个城市进行轰炸。每个城市都有一个重要度 a<sub>i</sub> 。设 x<sub>i</sub>=重要度大于 a<sub>i</sub> 的城市数+1，那么第 i 个城市就是第 x<sub>i</sub> 个被轰炸的城市。显然这样能保证重要度大的城市先被轰炸，重要度相同的城市同时被轰炸。现在 YJC 想知道，对于每一个 i，x<sub>i</sub> 等于多少?</p>
