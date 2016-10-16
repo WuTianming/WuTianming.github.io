@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title><![CDATA[palin]]></title>
+      <url>http://wutianming.coding.me/2016/10/16/palin/</url>
+      <content type="html"><![CDATA[<h2 id="回文数-Palin"><a href="#回文数-Palin" class="headerlink" title="回文数 / Palin"></a>回文数 / Palin</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>回文数是指其逆序数与本身相同的数，如12321就是一个回文数。输入一个正整数N，求从1到N中十进制、二进制和八进制均为回文数的数字个数。注意：一位数也是回文数。</p>
+<a id="more"></a>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>一行，含有一个正整数N 。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>一行一个整数，即符合条件的数字个数。</p>
+<h3 id="样例数据"><a href="#样例数据" class="headerlink" title="样例数据"></a>样例数据</h3><table>
+<thead>
+<tr>
+<th>Palin.in</th>
+<th>Palin.out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h3><p>100%的数据：N≤10^6。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[e]]></title>
       <url>http://wutianming.coding.me/2016/10/06/e/</url>
       <content type="html"><![CDATA[<h2 id="恶-E"><a href="#恶-E" class="headerlink" title="恶 / E"></a>恶 / E</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>有 n 个恶魔就要诞生了，恶魔头子要给每个即将诞生的恶魔取一个名字，恶魔秘书给恶魔头子提供了 n 个字符串供参考，由于每个字符串单词都很长，恶魔头子想到先把单词化简一下，方法是把每个单词尽量取短些的前缀，但所取的前缀不能是其它单词的前缀。这个任务现在就交给你来完成。</p>
