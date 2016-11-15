@@ -4,6 +4,12 @@
   
     
     <entry>
+      <title><![CDATA[Touchpad Hack]]></title>
+      <url>http://wutianming.coding.me/2016/11/15/Touchpad-Hack/</url>
+      <content type="html"><![CDATA[<h2 id="I’ve-created-a-program-that-enables-you-to-draw-with-your-unused-touchpad"><a href="#I’ve-created-a-program-that-enables-you-to-draw-with-your-unused-touchpad" class="headerlink" title="I’ve created a program that enables you to draw with your unused touchpad!"></a>I’ve created a program that enables you to draw with your unused touchpad!</h2>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[palin]]></title>
       <url>http://wutianming.coding.me/2016/10/16/palin/</url>
       <content type="html"><![CDATA[<h2 id="回文数-Palin"><a href="#回文数-Palin" class="headerlink" title="回文数 / Palin"></a>回文数 / Palin</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>回文数是指其逆序数与本身相同的数，如12321就是一个回文数。输入一个正整数N，求从1到N中十进制、二进制和八进制均为回文数的数字个数。注意：一位数也是回文数。</p>
