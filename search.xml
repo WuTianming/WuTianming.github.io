@@ -3189,7 +3189,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[palin]]></title>
+      <title><![CDATA[Palin]]></title>
       <url>http://wutianming.coding.me/2016/10/16/palin/</url>
       <content type="html"><![CDATA[<h2 id="回文数-Palin"><a href="#回文数-Palin" class="headerlink" title="回文数 / Palin"></a>回文数 / Palin</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>回文数是指其逆序数与本身相同的数，如12321就是一个回文数。输入一个正整数N，求从1到N中十进制、二进制和八进制均为回文数的数字个数。注意：一位数也是回文数。</p>
 <a id="more"></a>
@@ -3214,7 +3214,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[e]]></title>
+      <title><![CDATA[E]]></title>
       <url>http://wutianming.coding.me/2016/10/06/e/</url>
       <content type="html"><![CDATA[<h2 id="恶-E"><a href="#恶-E" class="headerlink" title="恶 / E"></a>恶 / E</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>有 n 个恶魔就要诞生了，恶魔头子要给每个即将诞生的恶魔取一个名字，恶魔秘书给恶魔头子提供了 n 个字符串供参考，由于每个字符串单词都很长，恶魔头子想到先把单词化简一下，方法是把每个单词尽量取短些的前缀，但所取的前缀不能是其它单词的前缀。这个任务现在就交给你来完成。</p>
 <a id="more"></a>
@@ -3251,7 +3251,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[bomb]]></title>
+      <title><![CDATA[Bomb]]></title>
       <url>http://wutianming.coding.me/2016/10/05/bomb/</url>
       <content type="html"><![CDATA[<h2 id="轰炸-Bomb"><a href="#轰炸-Bomb" class="headerlink" title="轰炸 / Bomb"></a>轰炸 / Bomb</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>C 国和 W 国爆发了战争！YJC 决定对 W 国的 n 个城市进行轰炸。每个城市都有一个重要度 a<sub>i</sub> 。设 x<sub>i</sub>=重要度大于 a<sub>i</sub> 的城市数+1，那么第 i 个城市就是第 x<sub>i</sub> 个被轰炸的城市。显然这样能保证重要度大的城市先被轰炸，重要度相同的城市同时被轰炸。现在 YJC 想知道，对于每一个 i，x<sub>i</sub> 等于多少?</p>
 <a id="more"></a>
@@ -3279,7 +3279,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[feng]]></title>
+      <title><![CDATA[Feng]]></title>
       <url>http://wutianming.coding.me/2016/10/05/feng/</url>
       <content type="html"><![CDATA[<h2 id="风-Feng"><a href="#风-Feng" class="headerlink" title="风 / Feng"></a>风 / Feng</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>起风了，风中飘着很多数字对，小 S 认为，只有满足某种特定关系的数字对才能飘得更远，现在她想知道满足 a+b&lt;=n，且 ab/(a+b)是整数的正整数对(a，b)有多少。</p>
 <a id="more"></a>
@@ -3304,7 +3304,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[shui]]></title>
+      <title><![CDATA[Shui]]></title>
       <url>http://wutianming.coding.me/2016/10/05/shui/</url>
       <content type="html"><![CDATA[<h2 id="水-Shui"><a href="#水-Shui" class="headerlink" title="水 / Shui"></a>水 / Shui</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>小 S 有一个水瓶，里面装有一定量的水，由于某些原因，她只记得水瓶里的水在[L，R]区间内，小 S 还有两个水杯，她每次可以往一个杯子里倒任意数量的水（可以不是整数），如果不足则全部倒完，现在她想知道至少需要多少次操作才能保证对于[L，R]中的每个数，操作完成后水瓶里剩的水不超过 1，且两个杯子里水量的差也不超过 1 。</p>
 <a id="more"></a>
@@ -3337,7 +3337,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[di]]></title>
+      <title><![CDATA[Di]]></title>
       <url>http://wutianming.coding.me/2016/10/05/di/</url>
       <content type="html"><![CDATA[<h2 id="地-Di"><a href="#地-Di" class="headerlink" title="地 / Di"></a>地 / Di</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>地上有一块 n*n 的棋盘，小 S 决定在上面放棋子，使任意两个棋子都不在同一行或同一列或同一斜线，由于小 S 不想思考，她决定逐行且在每行从左往右考虑格子，如果能放棋子就放上棋子，现在她想知道这样会放上多少个棋子。</p>
 <a id="more"></a>
@@ -3361,7 +3361,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[shu]]></title>
+      <title><![CDATA[Shu]]></title>
       <url>http://wutianming.coding.me/2016/10/05/shu/</url>
       <content type="html"><![CDATA[<h2 id="数-Shu"><a href="#数-Shu" class="headerlink" title="数 / Shu"></a>数 / Shu</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>将 N 个整数排成一行，每个整数 a[i]的值在(-10000 ≤ a[i] ≤ 10000)。然后从这一行数中进行取数，其规则是：可从这一行中的任何一个位置开始取数，到任何位置结束，但不能不取。找出一种取法，使得取得的和为最大，再找出一种取法，使得取得的和为最小。例如：N=4， 4 个数依次为：13，-6，7，-8 取得和为最大的是：13+(-6)+7=14 取得和为最小的是：-8。</p>
 <a id="more"></a>
@@ -3389,14 +3389,14 @@
     </entry>
     
     <entry>
-      <title><![CDATA[commend]]></title>
+      <title><![CDATA[Commend]]></title>
       <url>http://wutianming.coding.me/2016/10/04/commend/</url>
       <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, m;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">55</span>][<span class="number">55</span>];</span><br><span class="line"><span class="keyword">int</span> b[<span class="number">55</span>];</span><br><span class="line"><span class="keyword">int</span> c[<span class="number">55</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    freopen(<span class="string">"commend.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</span><br><span class="line">    freopen(<span class="string">"commend.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> id = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= m; j++) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a[i][j]);</span><br><span class="line">            <span class="keyword">if</span> (a[i][j] &gt; cnt) &#123;</span><br><span class="line">                cnt = a[i][j];</span><br><span class="line">                id = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        b[i] = id;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        c[b[i]]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> id = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (c[i] &gt; cnt) &#123;</span><br><span class="line">            cnt = c[i];</span><br><span class="line">            id = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, id);</span><br><span class="line">    return <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
     </entry>
     
     <entry>
-      <title><![CDATA[product]]></title>
+      <title><![CDATA[Product]]></title>
       <url>http://wutianming.coding.me/2016/10/03/product/</url>
       <content type="html"><![CDATA[<h2 id="因子积-Product"><a href="#因子积-Product" class="headerlink" title="因子积 / Product"></a>因子积 / Product</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>YJC 想学习数论，但他连因子和怎么求都不知道，所以他决定先学习因子积。很快 YJC 就学会了怎么求因子积，于是他决定来考考你。当然，对于你来说求一个数的因子积实在是小菜一碟，所以他决定把问题变一变。</p>
 <p>设 N=p<sub>1</sub><sup>a1</sup> × p<sub>2</sub><sup>a2</sup> × … × p<sub>m</sub><sup>am</sup>， YJC 把 a1、a2、…、am 和 N%1998585857 的值告诉了你，现在他希望你告诉他 N<sup>2</sup> 的因子积%1998585857 的值是多少。</p>
@@ -3426,7 +3426,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[addone]]></title>
+      <title><![CDATA[Addone]]></title>
       <url>http://wutianming.coding.me/2016/10/03/addone/</url>
       <content type="html"><![CDATA[<h2 id="加一-Addone"><a href="#加一-Addone" class="headerlink" title="加一 / Addone"></a>加一 / Addone</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>你的任务是很简单，给你一个非负整数 N，输出 N+1。唯一的复杂之处在于给出的整数是一个 2~36 进制（包括边界）中一个未知进制的整数（大家知道的，从 10 开始的数字分别用 A，B，C……来表示）。因此，你的程序必须按字典序递增输出所有可能的结果。</p>
 <a id="more"></a>
@@ -3471,7 +3471,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[gou]]></title>
+      <title><![CDATA[Gou]]></title>
       <url>http://wutianming.coding.me/2016/10/02/gou/</url>
       <content type="html"><![CDATA[<h2 id="苟-Gou"><a href="#苟-Gou" class="headerlink" title="苟 / Gou"></a>苟 / Gou</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>苟先生有一个字符串，不过他的朋友富先生对他的字符串做了一些小手脚，不仅打乱了顺序而且还把一些字符变成了 “*” ，而且这个字符串混进了一大堆字符串中。苟先生想知道哪些可能是他的字符串。</p>
 <a id="more"></a>
@@ -3517,7 +3517,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[tree]]></title>
+      <title><![CDATA[Tree]]></title>
       <url>http://wutianming.coding.me/2016/10/02/tree/</url>
       <content type="html"><![CDATA[<h2 id="构建二叉树-Tree"><a href="#构建二叉树-Tree" class="headerlink" title="构建二叉树 / Tree"></a>构建二叉树 / Tree</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>树的表示方法很多，可以采用自然界的树形表示法，也可以采用括号表示法：先将根结点放入一对圆括号中，然后把它的子树按由左往右的顺序放入括号中，而对子树也采用同样的方法处理。同层子树与它的根结点用圆括号扩起来，同层子树之间用逗号格开，最后用闭括号括起来。如图所示的树可以表示成:(1(2(4,5),3))。由完全二叉树的定义我们可知，如果知道该完全二叉树的结点个数，则可以构建出一棵确定的完全二叉树，现在输入完全二叉树的结点数 N(N≤2<sup>14</sup>)，用括号表示法输出这棵树。（默认树的结点名称为树结点的编号。）</p>
 <a id="more"></a>
@@ -3542,7 +3542,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[matrix]]></title>
+      <title><![CDATA[Matrix]]></title>
       <url>http://wutianming.coding.me/2016/10/02/matrix/</url>
       <content type="html"><![CDATA[<h2 id="矩阵模拟-Matrix"><a href="#矩阵模拟-Matrix" class="headerlink" title="矩阵模拟 / Matrix"></a>矩阵模拟 / Matrix</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>给出 2 个大小相同的矩阵方阵 A 和 B，方阵中的元素为 0 或 1。若 A 和 B 相似，则它们满足下面条件:</p>
 <table>
@@ -3630,7 +3630,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[example]]></title>
+      <title><![CDATA[Example]]></title>
       <url>http://wutianming.coding.me/2016/10/01/example/</url>
       <content type="html"><![CDATA[<h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><h3 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h3><h4 id="标题4"><a href="#标题4" class="headerlink" title="标题4"></a>标题4</h4><h5 id="标题5"><a href="#标题5" class="headerlink" title="标题5"></a>标题5</h5><h6 id="标题6"><a href="#标题6" class="headerlink" title="标题6"></a>标题6</h6><a id="more"></a>
 <blockquote>
