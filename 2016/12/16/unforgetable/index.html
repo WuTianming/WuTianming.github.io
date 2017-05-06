@@ -5,11 +5,18 @@
   
 
 
-<html class="theme-next mist use-motion">
+<html class="theme-next mist use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
+
 
 
 
@@ -27,9 +34,12 @@
 
 
 
+
+
+
   
   
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -37,9 +47,9 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Diary," />
@@ -51,7 +61,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
 
 
 
@@ -68,7 +78,7 @@
 <meta property="og:description" content="本文根据真实回忆改编而成。原本是想写成日记合集的，然后发现以前的记忆都很模糊，甚至连季节都记不清楚；而记日记又是从初二才开始的习惯。所以就采用了这种形式。我的日记其实就是一张纸，每天写一句由中英日三种语言文字加符号混合而成的超精简（火星文）句子来记事；而真正的日记本是要交给老师的=_=
 
 小学，六年级。">
-<meta property="og:updated_time" content="2016-12-18T14:29:57.698Z">
+<meta property="og:updated_time" content="2017-01-18T09:27:23.362Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="谁不曾有年少轻狂？">
 <meta name="twitter:description" content="本文根据真实回忆改编而成。原本是想写成日记合集的，然后发现以前的记忆都很模糊，甚至连季节都记不清楚；而记日记又是从初二才开始的习惯。所以就采用了这种形式。我的日记其实就是一张纸，每天写一句由中英日三种语言文字加符号混合而成的超精简（火星文）句子来记事；而真正的日记本是要交给老师的=_=
@@ -77,26 +87,37 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"left","display":"post"},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 6284163076665116000,
+      userId: '0',
       author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
 
 
-
   <link rel="canonical" href="http://wutianming.coding.me/2016/12/16/unforgetable/"/>
 
-  <title> 谁不曾有年少轻狂？ | WuTianming </title>
+
+
+
+
+  <title>谁不曾有年少轻狂？ | WuTianming</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -112,34 +133,42 @@
 
 
 
+
+
+
+
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">WuTianming</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">WuTianming</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
   </div>
-  <p class="site-subtitle"></p>
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -200,34 +229,13 @@
       
 
       
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            Search
-          </a>
-        </li>
-      
     </ul>
   
 
   
-    <div class="site-search">
-      
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
-</div>
-
-
-    </div>
-  
 </nav>
+
+
 
  </div>
     </header>
@@ -242,49 +250,64 @@
     
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://wutianming.coding.me/2016/12/16/unforgetable/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WuTianming">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WuTianming">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                谁不曾有年少轻狂？
-              
-            
-          </h1>
+          <h1 class="post-title" itemprop="name headline">谁不曾有年少轻狂？</h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-12-16T21:40:09+08:00" content="2016-12-16">
-              2016-12-16
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-16T21:40:09+08:00">
+                2016-12-16
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Diary/" itemprop="url" rel="index">
                     <span itemprop="name">Diary</span>
                   </a>
@@ -292,43 +315,39 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/12/16/unforgetable/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/16/unforgetable/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
           
 
           
           
              <span id="/2016/12/16/unforgetable/" class="leancloud_visitors" data-flag-title="谁不曾有年少轻狂？">
-               &nbsp; | &nbsp;
+               <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">visitors </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
+
+          
+
+          
+
         </div>
       </header>
     
 
-
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -360,18 +379,14 @@
 <p>是锦！</p>
 <h5 id="2015-秋-amp-冬-磨合"><a href="#2015-秋-amp-冬-磨合" class="headerlink" title="2015 秋&amp;冬 磨合"></a>2015 秋&amp;冬 磨合</h5><p>恩，真是巧合。我们仨选了同一所学校，还被分到了同一个班级里。经过一段时间的磨合，博以最高的成绩当选本班班长，锦<del>由老师钦定</del>成为了政治课代表，而我则<del>以运气</del>与锦同时成为英语考试第一名，<del>然后英语老师看锦已经有职位了，</del>就把课代表给了我。</p>
 <p>新的生活，就这样启航了！（此处BGM《前前前世》嗨起来）</p>
-<h5 id="2016-春"><a href="#2016-春" class="headerlink" title="2016 春"></a>2016 春</h5><font color="white">洋</font>
+<h5 id="2016-春"><a href="#2016-春" class="headerlink" title="2016 春"></a>2016 春</h5><font color="white">洋</font><br>// 这一部分有一点戏剧化……就当是狗血剧情，先略<br><br>##### 2016 夏<br><br><font color="white">平淡</font><br>// 这里内容平淡无奇<br><br>——————————<br><br>#### 中学，初二。<br><br>##### 2016 秋<br><br><font color="white">同行</font><br>// 这里内容很重要<br><br>##### 2016 冬<br><br><font color="white">高潮</font><br>// 这是高潮，顺便带上一个告一段落，然而并没有结束<br><br>##### 2017<br><br>——————————<br><br><strong>警告：本文未完工。以下为草稿<del>。为防止剧透</del>，特意隐藏。</strong><br><br><font color="white"><br><br>&gt;   To: 铭儿<br>&gt;   　　整整16天了罢。<br>&gt;   　　欢乐 痛苦 纠结 徘徊<br>&gt;   　　谢谢你，让我懂得了如是的美好。<br>&gt;   　　真的谢谢你。很开心。<br>&gt;   　　你十三岁，我十四岁。<br>&gt;   　　我们，都太小。谁能知道结局如何？<br>&gt;   　　太多的承诺，太多的言语，也许有一瞬间会烟消云散。<br>&gt;   　　谁的青春，不迷茫？<br>&gt;   　　谁不曾有年少轻狂？<br>&gt;   　　怨哀，太美好，太短暂。你也有很多，不知道。<br>&gt;   　　这样的年华里，我们，只能是同学，朋友，仅此而已。<br>&gt;   　　也许你会恨我，怨我。我无言，无颜，以对。<br>&gt;   　　如果你不肯放弃，那么，五年后，再时以。<br>&gt;   　　又有几人能承诺，执着五年？太少。<br>&gt;   　　我知道。残酷，不人，但必须。放下。<br>&gt;   　　也许你也认为我太决绝。<br>&gt;   　　放下，不放弃，同学，朋友，不得。僭。越。<br>&gt;   　　我也不忍，不舍，但，<br>&gt;   　　终究不能。<br>&gt;   　　存于心里罢。<br>&gt;   　　对不起。<br>&gt;   　　你会是我，忘不掉的朋友，以后，也要避嫌。<br>&gt;   　　很重要。以后，你是我的朋友，还是，仅此而已。<br>&gt;   　　有很多话，提笔，又写不出。最后一句罢。<br>&gt;   　　以后，不要熬夜了好不好？<p align="right"><br>&gt;   2016.12.16（五）<br>&gt;   早. 7:00</p><br><br></font>
 
-<h5 id="2016-夏"><a href="#2016-夏" class="headerlink" title="2016 夏"></a>2016 夏</h5><font color="white">平淡</font>
+      
+    </div>
 
-<hr>
-<h4 id="中学，初二。"><a href="#中学，初二。" class="headerlink" title="中学，初二。"></a>中学，初二。</h4><h5 id="2016-秋"><a href="#2016-秋" class="headerlink" title="2016 秋"></a>2016 秋</h5><font color="white">同行</font>
-
-<h5 id="2016-冬"><a href="#2016-冬" class="headerlink" title="2016 冬"></a>2016 冬</h5><font color="white">高潮&amp;End</font>
-
-<hr>
-<p><strong>警告：本文未完工。以下为草稿<del>。为防止剧透</del>，特意隐藏。</strong></p>
-<font color="white"><br><br>&gt;   To: 铭儿<br>&gt;   　　整整16天了罢。<br>&gt;   　　欢乐 痛苦 纠结 徘徊<br>&gt;   　　谢谢你，让我懂得了如是的美好。<br>&gt;   　　真的谢谢你。很开心。<br>&gt;   　　你十三岁，我十四岁。<br>&gt;   　　我们，都太小。谁能知道结局如何？<br>&gt;   　　太多的承诺，太多的言语，也许有一瞬间会烟消云散。<br>&gt;   　　谁的青春，不迷茫？<br>&gt;   　　谁不曾有年少轻狂？<br>&gt;   　　怨哀，太美好，太短暂。你也有很多，不知道。<br>&gt;   　　这样的年华里，我们，只能是同学，朋友，仅此而已。<br>&gt;   　　也许你会恨我，怨我。我无言，无颜，以对。<br>&gt;   　　如果你不肯放弃，那么，五年后，再时以。<br>&gt;   　　又有几人能承诺，执着五年？太少。<br>&gt;   　　我知道。残酷，不人，但必须。放下。<br>&gt;   　　也许你也认为我太决绝。<br>&gt;   　　放下，不放弃，同学，朋友，不得。僭。越。<br>&gt;   　　我也不忍，不舍，但，<br>&gt;   　　终究不能。<br>&gt;   　　存于心里罢。<br>&gt;   　　对不起。<br>&gt;   　　你会是我，忘不掉的朋友，以后，也要避嫌。<br>&gt;   　　很重要。以后，你是我的朋友，还是，仅此而已。<br>&gt;   　　有很多话，提笔，又写不出。最后一句罢。<br>&gt;   　　以后，不要熬夜了好不好？<p align="right"><br>&gt;   2016.12.16（五）<br>&gt;   早. 7:00</p><br><br></font>
+    <div>
+      
+        
 
       
     </div>
@@ -394,9 +409,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Diary/" rel="tag">#Diary</a>
+            <a href="/tags/Diary/" rel="tag"># Diary</a>
           
         </div>
+      
+
+      
+        
       
 
       
@@ -408,6 +427,8 @@
               </a>
             
           </div>
+
+          <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
@@ -435,9 +456,9 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/16/unforgetable/"
-           data-title="谁不曾有年少轻狂？" data-url="http://wutianming.coding.me/2016/12/16/unforgetable/">
-      </div>
+      
+        <div id="gitment-container"></div>
+      
     
   </div>
 
@@ -470,25 +491,32 @@
         </ul>
       
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
                alt="WuTianming" />
           <p class="site-author-name" itemprop="name">WuTianming</p>
-          <p class="site-description motion-element" itemprop="description">I'm not the director, but a programming-lover.</p>
+           
+              <p class="site-description motion-element" itemprop="description">I'm not the director, but a programming-lover.</p>
+          
         </div>
         <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">20</span>
-              <span class="site-state-item-name">posts</span>
-            </a>
-          </div>
 
           
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
             <div class="site-state-item site-state-categories">
-              <a href="/categories">
+              <a href="/categories/index.html">
                 <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">categories</span>
               </a>
@@ -496,8 +524,10 @@
           
 
           
+            
+            
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
+              <a href="/tags/index.html">
                 <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">tags</span>
               </a>
@@ -518,19 +548,29 @@
         
         
 
+        
+
+
       </section>
 
       
+      <!--noindex-->
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
+
             
               
             
+
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#小学，六年级。"><span class="nav-number">1.</span> <span class="nav-text">小学，六年级。</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2015-春-Day1"><span class="nav-number">1.1.</span> <span class="nav-text">2015 春 Day1</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2015-春-Day2"><span class="nav-number">1.2.</span> <span class="nav-text">2015 春 Day2</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2015-夏-毕业"><span class="nav-number">1.3.</span> <span class="nav-text">2015 夏 毕业</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#中学，初一。"><span class="nav-number">2.</span> <span class="nav-text">中学，初一。</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2015-秋-入学"><span class="nav-number">2.1.</span> <span class="nav-text">2015 秋 入学</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2015-秋-amp-冬-磨合"><span class="nav-number">2.2.</span> <span class="nav-text">2015 秋&冬 磨合</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2016-春"><span class="nav-number">2.3.</span> <span class="nav-text">2016 春</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2016-夏"><span class="nav-number">2.4.</span> <span class="nav-text">2016 夏</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#中学，初二。"><span class="nav-number">3.</span> <span class="nav-text">中学，初二。</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2016-秋"><span class="nav-number">3.1.</span> <span class="nav-text">2016 秋</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2016-冬"><span class="nav-number">3.2.</span> <span class="nav-text">2016 冬</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#小学，六年级。"><span class="nav-number">1.</span> <span class="nav-text">小学，六年级。</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2015-春-Day1"><span class="nav-number">1.1.</span> <span class="nav-text">2015 春 Day1</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2015-春-Day2"><span class="nav-number">1.2.</span> <span class="nav-text">2015 春 Day2</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2015-夏-毕业"><span class="nav-number">1.3.</span> <span class="nav-text">2015 夏 毕业</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#中学，初一。"><span class="nav-number">2.</span> <span class="nav-text">中学，初一。</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2015-秋-入学"><span class="nav-number">2.1.</span> <span class="nav-text">2015 秋 入学</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2015-秋-amp-冬-磨合"><span class="nav-number">2.2.</span> <span class="nav-text">2015 秋&冬 磨合</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2016-春"><span class="nav-number">2.3.</span> <span class="nav-text">2016 春</span></a></li></ol></li></ol></div>
             
+
           </div>
         </section>
+      <!--/noindex-->
+      
+
       
 
     </div>
@@ -546,12 +586,13 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">WuTianming</span>
 </div>
+
 
 <div class="powered-by">
   Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
@@ -564,15 +605,20 @@
   </a>
 </div>
 
+
         
 
         
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
   </div>
 
   
@@ -595,213 +641,118 @@
 
 
 
-  
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
-  
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
 
 
 
   
-  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
 
 
   
 
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
   
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
     
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"wutianming"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
     
-    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
-  
-
-
-
-
-
-
-  
-  
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
-
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
-
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-
-    });
-
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
+    
+    
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    
+        <script type="text/javascript">
+            var gitment = new Gitment({
+                id: document.location.href, 
+                owner: 'WuTianming',
+                repo: 'BlogComment',
+                oauth: {
+                    client_id: '7014f4e03a920e759b57',
+                    client_secret: 'ed3438d03941e7901911b30caaae49389e667797',
+                }});
+            gitment.render('gitment-container');
+        </script>
+    
 
 
   
+
+
+
+
 
   
 
@@ -911,6 +862,34 @@
   </script>
 
 
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
 
   
 
