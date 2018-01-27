@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Dativos De Interés / 利益与格]]></title>
+    <url>%2F2018%2F01%2F27%2Fdativos-de-interes%2F</url>
+    <content type="text"><![CDATA[https://www.zhihu.com/question/52204991/answer/139540740 打个学习笔记， 西语中的利益与格（把一个并不是宾语的人强行拿来当作动词的间接宾语；与格即间接宾语），好像只能这么理解…… 铺垫语法点，西语宾语为代词的时候前置，紧跟在动词之前，和古汉语否定句规则一样（我打赌你们都不知道古汉语里有这个。），比如《送东阳马生序》里面的“弗之怠”就是这鬼语法，还有“时不我待”（遗留成语）。 开始。例，El gato se me murió. 逐词翻译即 “The/cat[S]/itself[DO]/(to) me[IO]/died.” / “The cat died itself to me.” 这里 itself 做 die 的宾语就不吐槽了，西语就是喜欢直宾回到主语（中文理解，猫把自己弄死了，或者猫自己死了）；那 (to) me 作 die 的间宾，这里就是利益与格用法，表示动作影响的对象，是说猫死了影响到我，所以可以理解成“我的猫自己死了”。 还有例如 Me[IO] duele(hurts) la(the) cabeza(head)[S]. / (my) Head hurts (to) me. 表“我头疼”，是先说头疼，再说影响到我…… 真神经 接下来还发现了更神经的，因为这种鬼语法在日文和汉语都有： 日文如 「太郎は父に死なれた。」（为什么都要用这个烦人的die动词做示例呢）这里直翻英语就是 Tarō was died by (his) father. 这种用法虽然主语变成了被影响人，但是它毕竟还是被动式嘛，所以反转成 father 作主语就是 (his) Father died (to) Tarō，跟上面西语语法一模一样！ 更令人窒息的是《儒林外传》里有句话，“王冕死了父亲”。是否想过，为何这句话死的是父亲不是王冕？为什么“死”这一不及物动词却接了个宾语，而且宾语还是动作的主体？ 所以只能这么理解，To 王冕, died the father.（强行倒装）（其实这句话的结构和上面的西日是反的） 还看到知乎上的一个例子，“今天费了那么大劲抓小偷还是被他跑了。”这句话就和前面西日一样了。 完结，撒花]]></content>
+      <tags>
+        <tag>Español</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MathJax]]></title>
     <url>%2F2017%2F10%2F22%2FMathJax%2F</url>
     <content type="text"><![CDATA[$$\frac{\partial u}{\partial t}= h^2 \left( \frac{\partial^2 u}{\partial x^2} +\frac{\partial^2 u}{\partial y^2} +\frac{\partial^2 u}{\partial z^2}\right)$$]]></content>
